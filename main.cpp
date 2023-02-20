@@ -55,7 +55,7 @@ int getProgrammerChoice(int dCol, int d1, string choice)
     return dCol;
 }
 
-void programmers(string program[5][5])
+void programmers()
 {
     cout << "Programmers and their Preferences\n";
     cout << "Programmer #1\tProgrammer #2\tProgrammer #3\tProgrammer #4\tProgrammer #5\n";
@@ -70,7 +70,7 @@ void programmers(string program[5][5])
     }
 }
 
-void departments(string department[5][5])
+void departments()
 {
     cout << "\nDepartments and their Preferences\n";
     cout << "Department #1\tDepartment #2\tDepartment #3\tDepartment #4\tDepartment #5\n";
@@ -153,8 +153,8 @@ int main()
         exit(0);
     }
 
-    programmers(program);
-    departments(department);
+    programmers();
+    departments();
     preferences();
 
     return 0;
