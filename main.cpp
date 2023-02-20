@@ -36,7 +36,7 @@ int getOtherDepartment(string choice, int dCol, int dRow)
     return dCol;
 }
 
-int getProgrammerChoice(int dCol, int d1, int dRow, string choice)
+int getProgrammerChoice(int dCol, int d1, string choice)
 {
     int p1 = stoi(choice) - 1;
     for(int i = 0; i < 5; i++)
@@ -103,7 +103,7 @@ void preferences()
             
             if (dCol != d1)
             {
-                int d2 = getProgrammerChoice(dCol, d1, dRow, choice);
+                int d2 = getProgrammerChoice(dCol, d1, choice);
                 if (dCol == d2){
                     result[dCol] = choice;
                     break;
